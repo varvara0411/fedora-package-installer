@@ -17,7 +17,7 @@ RUN dnf install --nodocs --setopt=install_weak_deps=False -y \
     python3 \
     python3-pip \
     python3-requests \
-    && pip3 install --no-cache-dir beautifulsoup4 \
+    && pip3 install beautifulsoup4 \
     && rm -rf /var/cache /var/log/dnf* /var/log/yum.* \
     && dnf clean all
 
